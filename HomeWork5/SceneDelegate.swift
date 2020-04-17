@@ -24,8 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let locator = ServiceLocator.shared
         locator.addService(newsService)
         
-        let articleListModel = ArticlesListModel()
-        let contentViewModel = ContentViewModel(articleListModel: articleListModel, serviceLocator: locator)
+        let articleListModel = ArticlesListModel(serviceLocator: locator)
+        
+        let contentViewModel = ContentViewModel(articleListModel: articleListModel)
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView(viewModel: contentViewModel)

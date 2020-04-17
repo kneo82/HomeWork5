@@ -15,9 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        var config = Realm.Configuration()
-        config.deleteRealmIfMigrationNeeded = true
-        Realm.Configuration.defaultConfiguration = config
+        let config = Realm.Configuration()
+        print("--- Realm Path: \(String(describing: config.fileURL))")
         
         return true
     }

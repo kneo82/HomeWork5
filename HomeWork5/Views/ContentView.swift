@@ -34,6 +34,11 @@ struct ContentView: View {
                     self.viewModel.loadPage()
                 }
                 .navigationBarTitle("Articles")
+                .navigationBarItems(trailing:
+                    Button("Reset DataBase") {
+                        self.viewModel.resetDataBase()
+                    }
+                )
             }
         }
     }
