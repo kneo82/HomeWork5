@@ -9,13 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: ContentViewModel
+    
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        NavigationView {
+            VStack {
+                Picker("Sources", selection: $viewModel.sourceIndex) {
+                    ForEach(0 ..< viewModel.sourceNames.count) { index in
+                        Text(self.viewModel.sourceNames[index])
+                            .tag(index)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                List(viewModel.articles) { article in
+                    RowView(viewModel: RowViewModel(contentViewModel: self.viewModel, article: article))
+                        .onAppear {
+                            if self.viewModel.articles.isLast(article) {
+                                self.viewModel.loadPage()
+                            }
+                    }
+                }
+                .onAppear {
+                    self.viewModel.loadPage()
+                }
+                .navigationBarTitle("Articles")
+            }
+        }
     }
 }

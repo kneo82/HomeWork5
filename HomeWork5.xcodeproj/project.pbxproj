@@ -20,8 +20,32 @@
 		304D75042449BF33001820A5 /* ArticlesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D74FF2449BF33001820A5 /* ArticlesService.swift */; };
 		304D75052449BF33001820A5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D75002449BF33001820A5 /* Reachability.swift */; };
 		304D750C2449BFD9001820A5 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D750B2449BFD9001820A5 /* ArticleModel.swift */; };
-		304D750F2449BFEA001820A5 /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304D750E2449BFEA001820A5 /* HelperExtensions.swift */; };
+		30BD52E92449CE4200AE8EA6 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD52E82449CE4200AE8EA6 /* Collection.swift */; };
+		30BD52EB2449CEA700AE8EA6 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD52EA2449CEA700AE8EA6 /* Misc.swift */; };
+		30BD52F92449D6D700AE8EA6 /* ArticlesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD52F82449D6D700AE8EA6 /* ArticlesListModel.swift */; };
+		30BD52FA2449FCDE00AE8EA6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BD52F42449D09400AE8EA6 /* Realm.framework */; };
+		30BD52FB2449FCDE00AE8EA6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30BD52F42449D09400AE8EA6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30BD52FC2449FCDE00AE8EA6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BD52F32449D09100AE8EA6 /* RealmSwift.framework */; };
+		30BD52FD2449FCDE00AE8EA6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 30BD52F32449D09100AE8EA6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30BD5300244A2B9900AE8EA6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD52FF244A2B9900AE8EA6 /* ContentViewModel.swift */; };
+		30BD5304244A35A000AE8EA6 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD5303244A35A000AE8EA6 /* RowView.swift */; };
+		30BD5306244A3EF300AE8EA6 /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD5305244A3EF300AE8EA6 /* RowViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30BD52FE2449FCDE00AE8EA6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30BD52FD2449FCDE00AE8EA6 /* RealmSwift.framework in Embed Frameworks */,
+				30BD52FB2449FCDE00AE8EA6 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		304D74BC2449BDFE001820A5 /* HomeWork5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork5.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +63,14 @@
 		304D74FF2449BF33001820A5 /* ArticlesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesService.swift; sourceTree = "<group>"; };
 		304D75002449BF33001820A5 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		304D750B2449BFD9001820A5 /* ArticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
-		304D750E2449BFEA001820A5 /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		30BD52E82449CE4200AE8EA6 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		30BD52EA2449CEA700AE8EA6 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		30BD52F32449D09100AE8EA6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		30BD52F42449D09400AE8EA6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		30BD52F82449D6D700AE8EA6 /* ArticlesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListModel.swift; sourceTree = "<group>"; };
+		30BD52FF244A2B9900AE8EA6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		30BD5303244A35A000AE8EA6 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		30BD5305244A3EF300AE8EA6 /* RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BD52FA2449FCDE00AE8EA6 /* Realm.framework in Frameworks */,
 				304D74F62449BF08001820A5 /* NewsAPI in Frameworks */,
+				30BD52FC2449FCDE00AE8EA6 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +142,8 @@
 		304D74F42449BF08001820A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30BD52F42449D09400AE8EA6 /* Realm.framework */,
+				30BD52F32449D09100AE8EA6 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				304D750B2449BFD9001820A5 /* ArticleModel.swift */,
+				30BD52F82449D6D700AE8EA6 /* ArticlesListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +186,8 @@
 		304D75092449BF49001820A5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				30BD52FF244A2B9900AE8EA6 /* ContentViewModel.swift */,
+				30BD5305244A3EF300AE8EA6 /* RowViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -158,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				304D74C32449BDFE001820A5 /* ContentView.swift */,
+				30BD5303244A35A000AE8EA6 /* RowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,7 +204,8 @@
 		304D750D2449BFEA001820A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				304D750E2449BFEA001820A5 /* HelperExtensions.swift */,
+				30BD52E82449CE4200AE8EA6 /* Collection.swift */,
+				30BD52EA2449CEA700AE8EA6 /* Misc.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +230,7 @@
 				304D74B82449BDFE001820A5 /* Sources */,
 				304D74B92449BDFE001820A5 /* Frameworks */,
 				304D74BA2449BDFE001820A5 /* Resources */,
+				30BD52FE2449FCDE00AE8EA6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,13 +296,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				304D75032449BF33001820A5 /* ImageCache.swift in Sources */,
+				30BD5300244A2B9900AE8EA6 /* ContentViewModel.swift in Sources */,
 				304D750C2449BFD9001820A5 /* ArticleModel.swift in Sources */,
 				304D75042449BF33001820A5 /* ArticlesService.swift in Sources */,
 				304D74C02449BDFE001820A5 /* AppDelegate.swift in Sources */,
 				304D74FC2449BF28001820A5 /* ServiceLocator.swift in Sources */,
 				304D74C22449BDFE001820A5 /* SceneDelegate.swift in Sources */,
+				30BD52F92449D6D700AE8EA6 /* ArticlesListModel.swift in Sources */,
+				30BD5306244A3EF300AE8EA6 /* RowViewModel.swift in Sources */,
 				304D74C42449BDFE001820A5 /* ContentView.swift in Sources */,
-				304D750F2449BFEA001820A5 /* HelperExtensions.swift in Sources */,
+				30BD5304244A35A000AE8EA6 /* RowView.swift in Sources */,
+				30BD52E92449CE4200AE8EA6 /* Collection.swift in Sources */,
+				30BD52EB2449CEA700AE8EA6 /* Misc.swift in Sources */,
 				304D75052449BF33001820A5 /* Reachability.swift in Sources */,
 				304D74F92449BF20001820A5 /* URLImage.swift in Sources */,
 			);
@@ -403,6 +449,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWork5/Preview Content\"";
 				DEVELOPMENT_TEAM = 5298J2LD58;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HomeWork5/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -423,6 +473,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HomeWork5/Preview Content\"";
 				DEVELOPMENT_TEAM = 5298J2LD58;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HomeWork5/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -19,8 +19,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        let newsService: ArticlesService = ArticlesService()
+        
+        let locator = ServiceLocator.shared
+        locator.addService(newsService)
+        
+        let articleListModel = ArticlesListModel()
+        let contentViewModel = ContentViewModel(articleListModel: articleListModel, serviceLocator: locator)
+        
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView(viewModel: contentViewModel)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
